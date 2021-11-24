@@ -12,8 +12,82 @@
 
         // Fundamentals part 2
         
+        const string = 'This is a constrained string';
+        console.log(string);
 
+        // Single quotes 
 
+        const singleQuote = 'It does not matter which type of string is used';
+        const doubleQuote = "As you can see, JS can use both single quote and double quotes";
+
+        console.log(singleQuote);
+        console.log(doubleQuote);
+
+        // Escaping characters in a string
+
+        const bigmouth = "I\'ve got no right to take my place...";
+        console.log(bigmouth);
+
+        // Concatenation of strings
+
+        const name = "Neil";
+        const greeting = "Hello, $ {name}";
+        console.log(greeting); // Hello, Neil
+
+        const one = "Hello,";
+        const two = "How are you?";
+        const joined = "${one}${two}";
+        console.log(joined); // Hello, how are you
+
+        <button>Press me</button>
+
+        const button = document.querySelector("button");
+
+        function greet() {
+            const name = prompt("'What is your name?");
+            alert("Hello ${name}, nice to see you!");
+        }
+
+        button.addEventListener("click", greet);
+
+        // Concatenation using +
+
+        const greeting = "Hello";
+        const name = "Chris";
+        console.log(greeting + ", " + name);
+
+        // Template literals
+
+        const greeting = "Hello";
+        const name = "Chris";
+        console.log("${greeting}, ${name}"); // More readable than the above code
+
+        // Numbers vs Strings 
+
+        const name = "Front";
+        const number = 242;
+        console.log("${name}${number}"); // "Front 242"
+
+        const myString = '123';
+        const myNum = Number(myString);
+        console.log(typeof myNum);
+
+        const myNum2 = 123;
+        const myString2 = myNum2.toString();
+        console.log(typeof myString2);
+
+        // Including expressions in strings
+
+        const song = "Fight the Youth";
+        const score = 9;
+        const highestScore = 10;
+        const output = "I like the song ${song}. I gave it score of ${score/highestScore * 100}%";
+        console.log(output);
+
+        // Multiline strings
+
+        const output = "I like the song. \n I gave it a score of 90%";
+        console.log(output);
 
     </script>
     
