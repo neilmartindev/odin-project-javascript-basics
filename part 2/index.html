@@ -89,6 +89,63 @@
         const output = "I like the song. \n I gave it a score of 90%";
         console.log(output);
 
+        // W3 Schools
+
+        // Slicing
+
+        let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+        let length = txt.length; // Returns the length of the string
+
+        let str = "Apple, Banana, Kiwi";
+        let part = str.slice(7, 13); // Slicing from position 7 and 13 within the string this can be done by one value alone
+
+        // Substring method
+
+        let str = "Apple, Banana, Kiwi";
+        let part = str.substr(7,6);
+
+        let str = "Apple, Banana, Kiwi";
+        let part = str.substr(7);
+
+        // Replacing string content
+
+        let text = "Please visit Microsoft";
+        let newText = text.replace("Microsoft", "W3Schools");
+
+        let text = "Please visit Microsoft and Microsoft";
+        let newText = text.replace("Microsoft", "W3Schools");
+
+        // Converting to upper and lower class
+
+        let text1 = "Hello World";
+        let text2 = text1.toUpperCase();
+
+        let text1 = "Hello World";
+        let text2 = text1.toLowerCase();
+
+        // The concat method
+
+        let text1 = "Hello";
+        let text2 = "World";
+        let text3 = text1.concat("", text2);
+
+        text = "Hello" + "" + "World";
+        text = "Hello".concat("", "World");
+
+        // Javascript string padding
+
+        let text = "5";
+        let padded = text.padStart(4,0);
+
+        let text = "5";
+        let padded = text.padEnd(4,0);
+
+        // Converting a string to an array
+
+        text.split(",") // Split on commas
+        text.split(" ") // Split on spaces
+        text.split("|") // Split on pipe
+
     </script>
     
 </body>
