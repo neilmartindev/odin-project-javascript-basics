@@ -146,6 +146,111 @@
         text.split(" ") // Split on spaces
         text.split("|") // Split on pipe
 
+        // Conditionals within Javascript
+
+        if (condition) {
+
+            // Block of code to be executed
+        }
+
+        if (hour < 18) {
+            greeting = "Good day";
+        }
+
+        // If else
+
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+
+        if (time < 10) {
+            greeting = "Good morning";
+        } else if (time < 20){
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+
+        // Logical operators
+
+        result = a || b;
+        
+        alert (true || true); // True
+        alert (false || true); // True
+        alert (true || false); // True
+        alert (false || false); // False
+
+        if (1 || 0) {
+            alert("truthy!");
+        }
+
+        let hour = 9;
+
+        if (hour < 10 || hour > 18) {
+            alert("The Office is closed");
+        }
+
+        let hour 12;
+        if (hour < 10 || hour > 18 || isWeekend) {
+            alert("The office is closed");
+
+            result = value1 || value2 || value3;
+        } 
+
+        // && (AND)
+
+        result = a && b; 
+
+        let hour = 12;
+        let minute = 30;
+
+        if (hour == 12 && minute == 30) {
+            alert ("This time is 12:30");
+        }
+
+        // Switch statements
+
+        switch (expression) {
+            case x:
+                // Execute case x code block
+            case y:
+                // Execute case y code block
+                break;
+            default:
+                // Execute default code block
+        }
+
+        // Set the current day of the week to a variable, with 0 being Sunday and 6 being Saturday
+const day = new Date().getDay();
+
+switch (day) {
+    case 0:
+        console.log("It's Sunday, time to relax!");
+        break;
+    case 1:
+        console.log("Happy Monday!");
+        break;
+    case 2:
+        console.log("It's Tuesday. You got this!");
+        break;
+    case 3:
+        console.log("Hump day already!");
+        break;
+    case 4:
+        console.log("Just one more day 'til the weekend!");
+        break;
+    case 5:
+        console.log("Happy Friday!");
+        break;
+    case 6:
+        console.log("Have a wonderful Saturday!");
+        break;
+    default:
+        console.log("Something went horribly wrong...");
+}
+
     </script>
     
 </body>
