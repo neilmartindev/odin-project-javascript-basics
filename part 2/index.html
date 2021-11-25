@@ -1,257 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <script>
 
-        // Fundamentals part 2
-        
-        const string = 'This is a constrained string';
-        console.log(string);
+              // Fundamentals part 2
 
-        // Single quotes 
+              const string = 'This is a constrained string';
+              console.log(string);
 
-        const singleQuote = 'It does not matter which type of string is used';
-        const doubleQuote = "As you can see, JS can use both single quote and double quotes";
+              // Single quotes
 
-        console.log(singleQuote);
-        console.log(doubleQuote);
+              const singleQuote = 'It does not matter which type of string is used';
+              const doubleQuote = "As you can see, JS can use both single quote and double quotes";
 
-        // Escaping characters in a string
+              console.log(singleQuote);
+              console.log(doubleQuote);
 
-        const bigmouth = "I\'ve got no right to take my place...";
-        console.log(bigmouth);
+              // Escaping characters in a string
 
-        // Concatenation of strings
+              const bigmouth = "I\'ve got no right to take my place...";
+              console.log(bigmouth);
 
-        const name = "Neil";
-        const greeting = "Hello, $ {name}";
-        console.log(greeting); // Hello, Neil
+              // Concatenation of strings
 
-        const one = "Hello,";
-        const two = "How are you?";
-        const joined = "${one}${two}";
-        console.log(joined); // Hello, how are you
+              const name = "Neil";
+              const greeting = "Hello, $ {name}";
+              console.log(greeting); // Hello, Neil
 
-        <button>Press me</button>
+              const one = "Hello,";
+              const two = "How are you?";
+              const joined = "${one}${two}";
+              console.log(joined); // Hello, how are you
 
-        const button = document.querySelector("button");
+              <button>Press me</button>
 
-        function greet() {
-            const name = prompt("'What is your name?");
-            alert("Hello ${name}, nice to see you!");
-        }
+              const button = document.querySelector("button");
 
-        button.addEventListener("click", greet);
+              function greet() {
+                  const name = prompt("'What is your name?");
+                  alert("Hello ${name}, nice to see you!");
+              }
 
-        // Concatenation using +
+              button.addEventListener("click", greet);
 
-        const greeting = "Hello";
-        const name = "Chris";
-        console.log(greeting + ", " + name);
+              // Concatenation using +
 
-        // Template literals
+              const greeting = "Hello";
+              const name = "Chris";
+              console.log(greeting + ", " + name);
 
-        const greeting = "Hello";
-        const name = "Chris";
-        console.log("${greeting}, ${name}"); // More readable than the above code
+              // Template literals
 
-        // Numbers vs Strings 
+              const greeting = "Hello";
+              const name = "Chris";
+              console.log("${greeting}, ${name}"); // More readable than the above code
 
-        const name = "Front";
-        const number = 242;
-        console.log("${name}${number}"); // "Front 242"
+              // Numbers vs Strings
 
-        const myString = '123';
-        const myNum = Number(myString);
-        console.log(typeof myNum);
+              const name = "Front";
+              const number = 242;
+              console.log("${name}${number}"); // "Front 242"
 
-        const myNum2 = 123;
-        const myString2 = myNum2.toString();
-        console.log(typeof myString2);
+              const myString = '123';
+              const myNum = Number(myString);
+              console.log(typeof myNum);
 
-        // Including expressions in strings
+              const myNum2 = 123;
+              const myString2 = myNum2.toString();
+              console.log(typeof myString2);
 
-        const song = "Fight the Youth";
-        const score = 9;
-        const highestScore = 10;
-        const output = "I like the song ${song}. I gave it score of ${score/highestScore * 100}%";
-        console.log(output);
+              // Including expressions in strings
 
-        // Multiline strings
+              const song = "Fight the Youth";
+              const score = 9;
+              const highestScore = 10;
+              const output = "I like the song ${song}. I gave it score of ${score/highestScore * 100}%";
+              console.log(output);
 
-        const output = "I like the song. \n I gave it a score of 90%";
-        console.log(output);
+              // Multiline strings
 
-        // W3 Schools
+              const output = "I like the song. \n I gave it a score of 90%";
+              console.log(output);
 
-        // Slicing
+              // W3 Schools
 
-        let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
-        let length = txt.length; // Returns the length of the string
+              // Slicing
 
-        let str = "Apple, Banana, Kiwi";
-        let part = str.slice(7, 13); // Slicing from position 7 and 13 within the string this can be done by one value alone
+              let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+              let length = txt.length; // Returns the length of the string
 
-        // Substring method
+              let str = "Apple, Banana, Kiwi";
+              let part = str.slice(7, 13); // Slicing from position 7 and 13 within the string this can be done by one value alone
 
-        let str = "Apple, Banana, Kiwi";
-        let part = str.substr(7,6);
+              // Substring method
 
-        let str = "Apple, Banana, Kiwi";
-        let part = str.substr(7);
+              let str = "Apple, Banana, Kiwi";
+              let part = str.substr(7,6);
 
-        // Replacing string content
+              let str = "Apple, Banana, Kiwi";
+              let part = str.substr(7);
 
-        let text = "Please visit Microsoft";
-        let newText = text.replace("Microsoft", "W3Schools");
+              // Replacing string content
 
-        let text = "Please visit Microsoft and Microsoft";
-        let newText = text.replace("Microsoft", "W3Schools");
+              let text = "Please visit Microsoft";
+              let newText = text.replace("Microsoft", "W3Schools");
 
-        // Converting to upper and lower class
+              let text = "Please visit Microsoft and Microsoft";
+              let newText = text.replace("Microsoft", "W3Schools");
 
-        let text1 = "Hello World";
-        let text2 = text1.toUpperCase();
+              // Converting to upper and lower class
 
-        let text1 = "Hello World";
-        let text2 = text1.toLowerCase();
+              let text1 = "Hello World";
+              let text2 = text1.toUpperCase();
 
-        // The concat method
+              let text1 = "Hello World";
+              let text2 = text1.toLowerCase();
 
-        let text1 = "Hello";
-        let text2 = "World";
-        let text3 = text1.concat("", text2);
+              // The concat method
 
-        text = "Hello" + "" + "World";
-        text = "Hello".concat("", "World");
+              let text1 = "Hello";
+              let text2 = "World";
+              let text3 = text1.concat("", text2);
 
-        // Javascript string padding
+              text = "Hello" + "" + "World";
+              text = "Hello".concat("", "World");
 
-        let text = "5";
-        let padded = text.padStart(4,0);
+              // Javascript string padding
 
-        let text = "5";
-        let padded = text.padEnd(4,0);
+              let text = "5";
+              let padded = text.padStart(4,0);
 
-        // Converting a string to an array
+              let text = "5";
+              let padded = text.padEnd(4,0);
 
-        text.split(",") // Split on commas
-        text.split(" ") // Split on spaces
-        text.split("|") // Split on pipe
+              // Converting a string to an array
 
-        // Conditionals within Javascript
-
-        if (condition) {
-
-            // Block of code to be executed
-        }
-
-        if (hour < 18) {
-            greeting = "Good day";
-        }
-
-        // If else
-
-        if (hour < 18) {
-            greeting = "Good day";
-        } else {
-            greeting = "Good evening";
-        }
-
-        if (time < 10) {
-            greeting = "Good morning";
-        } else if (time < 20){
-            greeting = "Good day";
-        } else {
-            greeting = "Good evening";
-        }
-
-        // Logical operators
-
-        result = a || b;
-        
-        alert (true || true); // True
-        alert (false || true); // True
-        alert (true || false); // True
-        alert (false || false); // False
-
-        if (1 || 0) {
-            alert("truthy!");
-        }
-
-        let hour = 9;
-
-        if (hour < 10 || hour > 18) {
-            alert("The Office is closed");
-        }
-
-        let hour 12;
-        if (hour < 10 || hour > 18 || isWeekend) {
-            alert("The office is closed");
-
-            result = value1 || value2 || value3;
-        } 
-
-        // && (AND)
-
-        result = a && b; 
-
-        let hour = 12;
-        let minute = 30;
-
-        if (hour == 12 && minute == 30) {
-            alert ("This time is 12:30");
-        }
-
-        // Switch statements
-
-        switch (expression) {
-            case x:
-                // Execute case x code block
-            case y:
-                // Execute case y code block
-                break;
-            default:
-                // Execute default code block
-        }
-
-        // Set the current day of the week to a variable, with 0 being Sunday and 6 being Saturday
-const day = new Date().getDay();
-
-switch (day) {
-    case 0:
-        console.log("It's Sunday, time to relax!");
-        break;
-    case 1:
-        console.log("Happy Monday!");
-        break;
-    case 2:
-        console.log("It's Tuesday. You got this!");
-        break;
-    case 3:
-        console.log("Hump day already!");
-        break;
-    case 4:
-        console.log("Just one more day 'til the weekend!");
-        break;
-    case 5:
-        console.log("Happy Friday!");
-        break;
-    case 6:
-        console.log("Have a wonderful Saturday!");
-        break;
-    default:
-        console.log("Something went horribly wrong...");
-}
+              text.split(",") // Split on commas
+              text.split(" ") // Split on spaces
+              text.split("|") // Split on pipe
 
+              // Conditionals within Javascript
+
+              if (condition) {
+
+                  // Block of code to be executed
+              }
+
+              if (hour < 18) {
+                  greeting = "Good day";
+              }
+
+              // If else
+
+              if (hour < 18) {
+                  greeting = "Good day";
+              } else {
+                  greeting = "Good evening";
+              }
+
+              if (time < 10) {
+                  greeting = "Good morning";
+              } else if (time < 20){
+                  greeting = "Good day";
+              } else {
+                  greeting = "Good evening";
+              }
+
+              // Logical operators
+
+              result = a || b;
+
+              alert (true || true); // True
+              alert (false || true); // True
+              alert (true || false); // True
+              alert (false || false); // False
+
+              if (1 || 0) {
+                  alert("truthy!");
+              }
+
+              let hour = 9;
+
+              if (hour < 10 || hour > 18) {
+                  alert("The Office is closed");
+              }
+
+              let hour 12;
+              if (hour < 10 || hour > 18 || isWeekend) {
+                  alert("The office is closed");
+
+                  result = value1 || value2 || value3;
+              }
+
+              // && (AND)
+
+              result = a && b;
+
+              let hour = 12;
+              let minute = 30;
+
+              if (hour == 12 && minute == 30) {
+                  alert ("This time is 12:30");
+              }
+
+              // Switch statements
+
+              switch (expression) {
+                  case x:
+                      // Execute case x code block
+                  case y:
+                      // Execute case y code block
+                      break;
+                  default:
+                      // Execute default code block
+              }
+
+              // Set the current day of the week to a variable, with 0 being Sunday and 6 being Saturday
+      const day = new Date().getDay();
+
+      switch (day) {
+          case 0:
+              console.log("It's Sunday, time to relax!");
+              break;
+          case 1:
+              console.log("Happy Monday!");
+              break;
+          case 2:
+              console.log("It's Tuesday. You got this!");
+              break;
+          case 3:
+              console.log("Hump day already!");
+              break;
+          case 4:
+              console.log("Just one more day 'til the weekend!");
+              break;
+          case 5:
+              console.log("Happy Friday!");
+              break;
+          case 6:
+              console.log("Have a wonderful Saturday!");
+              break;
+          default:
+              console.log("Something went horribly wrong...");
+            }
     </script>
-    
-</body>
+  </body>
 </html>
